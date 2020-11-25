@@ -2,7 +2,7 @@ const request = require('request');
 
 const options = {
   method: 'GET',
-  url: 'https://covid19-brazil-api.now.sh/api/report/v1/brazil/uf/'
+  url: 'https://covid19-brazil-api.now.sh/api/report/v1/'
 };
 
 /*
@@ -20,8 +20,10 @@ function Cases(){
           throw new Error(err);
         }
       
-       for(let estado of body){
-           console.log(estado)
+       
+
+       for(let i = 0; i < body.length; i ++ ){
+         console.log(body)
        }
 })
 }

@@ -70,11 +70,16 @@ footer{
     .card{
         width: auto;
     }
+
+    #regions_div{
+        width: auto;
+    }
 }
 
 .mapa{
     border: 1px solid black;
-    width: auto;
-    height: 50vh;
+    height: 500px;
     margin: 0.5rem;
+    display: flex;
+    justify-content: center;
 }
