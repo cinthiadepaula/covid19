@@ -36,6 +36,11 @@ body{
     height: auto;
     text-align: center;
 }
+
+#regions_div{
+    width: 100%;
+}
+
 footer{
     background: #7A0000;
     color: white;
@@ -70,9 +75,7 @@ footer{
         width: auto;
     }
 
-    #regions_div{
-        width: auto;
-    }
+    
 }
 
 .mapa{

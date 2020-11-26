@@ -35,9 +35,9 @@ async function dados(){
     const cases = document.getElementById('cases');
     const deaths = document.getElementById('deaths');
     const recupered = document.getElementById('recupered')
-    cases.innerHTML = covid_data.confirmed;
-    deaths.innerHTML = covid_data.deaths;
-    recupered.innerHTML = covid_data.recovered;
+    cases.innerHTML = covid_data.confirmed.toLocaleString();
+    deaths.innerHTML = covid_data.deaths.toLocaleString();
+    recupered.innerHTML = (covid_data.recovered).toLocaleString();
 
   }catch(err){
     console.log(err)
@@ -67,8 +67,6 @@ const map = (state) => {
       let options = {
         colorAxis: { colors: ["#FA8072", "#800000"] },
         region:'BR',
-        width: 800,
-        height: 500,
         resolution: 'provinces',
         background:'transparent'
       };
