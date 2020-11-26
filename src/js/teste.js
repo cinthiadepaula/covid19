@@ -12,7 +12,6 @@ function state() {
     .then(function (response) {
       const data = response.data;
       const state = [];
-
       for (estado of data.data) {
         state.push(estado);
         console.log(estado.state)
@@ -28,6 +27,24 @@ function state() {
 
 state();
 
+async function dados(){
+  try{
+    const result = await axios.get('https://covid19-brazil-api.now.sh/api/report/v1/brazil');
+    const dados = result.data;
+    const covid_data = dados.data;
+    const cases = document.getElementById('cases');
+    const deaths = document.getElementById('deaths');
+    const recupered = document.getElementById('recupered')
+    cases.innerHTML = covid_data.confirmed;
+    deaths.innerHTML = covid_data.deaths;
+    recupered.innerHTML = covid_data.recovered;
+
+  }catch(err){
+    console.log(err)
+  }
+}
+
+dados()
 
 const map = (state) => {
     google.charts.load("current", {
