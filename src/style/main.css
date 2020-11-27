@@ -10,6 +10,7 @@ body{
     font-size: 1rem;
     background:#BA0000;
     
+    
 }
 
 .logotipo{width: 200px;}
@@ -32,55 +33,70 @@ body{
     background-color: #7A0000;
 }
 
+
+
 .container{
-    height: auto;
-    text-align: center;
-}
-
-#regions_div{
     width: 100%;
-}
-
-footer{
-    background: #7A0000;
-    color: white;
-    display: flex;
-    justify-content: center;
-    height: 1.8rem;
-    text-align: center;
-    bottom: 0;
-}
-
-.card{
-    margin: 2rem;
-    width: 20rem;
+    
     display: flex;
     flex-direction: column;
-}
-
-.conteudo-card{
-    display: flex;
-    width: auto; 
-    height: auto;
     justify-content: center;
-    text-align: center;
-}
-
-@media (max-width: 576px){
-    .conteudo-card{
-        flex-direction: column;
-        justify-content: center;
-    }
-    .card{
-        width: auto;
-    }
+    align-items: center;
 
     
 }
 
-.mapa{
-    height: 500px;
-    margin: 0.5rem;
+    
+
+footer{
+    background: #7A0000;
+    color: white;
+    display: flexbox;
+    justify-content: center;
+    height: 1.8rem;
+    text-align: center;
+    bottom: 0;
+    
+}
+
+.card{
+    margin: 1rem;
+    width: 15rem;
+    flex-direction: column;
+    border: 3px solid #BA0000 ;
+    
+}
+.card-body{
+    font-size: 1.8rem;
+    font-family: sans-serif;
+}
+
+.conteudo-card{
     display: flex;
     justify-content: center;
+    text-align: center;
+  
+    width: inherit;
+    font-size: 1rem;
+    
+}
+
+
+
+@media(max-width: 768px){
+    .conteudo-card{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+         
+    }
+
+    #regions_div{
+        width: max-content;
+        height: max-content;
+    }
+    footer{
+        bottom: 0;
+    }
 }

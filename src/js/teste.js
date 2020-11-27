@@ -68,7 +68,8 @@ const map = (state) => {
         colorAxis: { colors: ["#FA8072", "#800000"] },
         region:'BR',
         resolution: 'provinces',
-        background:'transparent'
+        backgroundColor: 'transparent',
+        
       };
       let chart = new google.visualization.GeoChart(
         document.getElementById("regions_div")
