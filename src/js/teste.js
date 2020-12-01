@@ -69,8 +69,10 @@ const map = (state) => {
         region:'BR',
         resolution: 'provinces',
         backgroundColor: 'transparent',
+        width:'375'
         
       };
+      
       let chart = new google.visualization.GeoChart(
         document.getElementById("regions_div")
       );
