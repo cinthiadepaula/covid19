@@ -32,10 +32,12 @@ body {
   justify-content: center;
   background-color: #7a0000;
 }
+h2{
+  color: rgb(89, 89, 89);
+}
 
 .container {
   width: 100%;
-  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -65,10 +67,13 @@ padding: 1rem;
   width: 15rem;
   flex-direction: column;
   border: 3px solid #ba0000;
+  font-family: 'Francois One', sans-serif;
+  color: rgb(89, 89, 89);
 }
 .card-body {
   font-size: 1.8rem;
   font-family: sans-serif;
+  font-family: 'Francois One', sans-serif;
 }
 
 .conteudo-card {
@@ -77,6 +82,12 @@ padding: 1rem;
   text-align: center;
   width: inherit;
   font-size: 1rem;
+}
+
+#cases-deaths{
+background-color: #ba0000;
+color: white;
+font-family: 'Francois One', sans-serif;
 }
 
 #regions{

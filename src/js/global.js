@@ -6,6 +6,14 @@ const config = {
   function country() {
     axios(config)
       .then(function (response) {
+        const res = response.data
+        const total = res.Global
+        const cases = document.getElementById('cases');
+        const deaths = document.getElementById('deaths');
+        const recupered = document.getElementById('recupered')
+        cases.innerHTML = total.TotalConfirmed.toLocaleString();
+        deaths.innerHTML = total.TotalDeaths.toLocaleString();
+        recupered.innerHTML = (total.TotalRecovered).toLocaleString();
         const Countries = [];
         for (Country of response.data.Countries) {
           Countries.push(Country);
