@@ -79,7 +79,9 @@ padding: 1rem;
   font-size: 1rem;
 }
 
-
+#regions{
+  padding-bottom: 2.5rem;
+}
 
 @media (max-width: 768px) {
   .conteudo-card {
@@ -89,10 +91,7 @@ padding: 1rem;
     align-items: center;
   }
 
-  #regions_div {
-    width: max-content;
-    height: auto;
-  }
+ 
   footer {
     bottom: 0;
   }
@@ -107,11 +106,10 @@ padding: 1rem;
     margin-top: 5rem;
   }
   .mapa{
-    border: 1px solid black;
+   
     height: auto;
     padding-bottom: 5rem;
   }
-
 
   
   
