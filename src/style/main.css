@@ -32,7 +32,7 @@ body {
   justify-content: center;
   background-color: #7a0000;
 }
-h2{
+h2 {
   color: rgb(89, 89, 89);
 }
 
@@ -45,12 +45,12 @@ h2{
 }
 
 footer {
-padding: 1rem;
+  padding: 1rem;
   background: #7a0000;
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content:center ;
+  justify-content: center;
   height: 5rem;
   align-items: center;
   text-align: center;
@@ -58,8 +58,10 @@ padding: 1rem;
   margin-top: 1.3rem;
 }
 
-.redes a img{
-    width: 50px;
+.redes a img {
+  width: 20px;
+  margin: 0.1rem;
+  filter: invert();
 }
 
 .card {
@@ -67,13 +69,13 @@ padding: 1rem;
   width: 15rem;
   flex-direction: column;
   border: 3px solid #ba0000;
-  font-family: 'Francois One', sans-serif;
+  font-family: "Francois One", sans-serif;
   color: rgb(89, 89, 89);
 }
 .card-body {
   font-size: 1.8rem;
   font-family: sans-serif;
-  font-family: 'Francois One', sans-serif;
+  font-family: "Francois One", sans-serif;
 }
 
 .conteudo-card {
@@ -84,13 +86,13 @@ padding: 1rem;
   font-size: 1rem;
 }
 
-#cases-deaths{
-background-color: #ba0000;
-color: white;
-font-family: 'Francois One', sans-serif;
+#cases-deaths {
+  background-color: #ba0000;
+  color: white;
+  font-family: "Francois One", sans-serif;
 }
 
-#regions{
+#regions {
   padding-bottom: 2.5rem;
 }
 
@@ -102,7 +104,6 @@ font-family: 'Francois One', sans-serif;
     align-items: center;
   }
 
- 
   footer {
     bottom: 0;
   }
@@ -116,12 +117,8 @@ font-family: 'Francois One', sans-serif;
     align-items: center;
     margin-top: 5rem;
   }
-  .mapa{
-   
+  .mapa {
     height: auto;
     padding-bottom: 5rem;
   }
-
-  
-  
 }
